@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+  <style>
+   body{
+    margin:0px;
+    padding: 0px;
+    letter-spacing: 1px;
+  }
+  form{
+    height: 100vh;
+    color: beige;
+    font-family: 'Inter', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px;
+    width: 40rem;
+    
+    
+  }
+  input{
+    width: 100%;
+    height: 50px;
+  }
+  
+  .title{
+    background-image: url(https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?w=996&t=st=1691128045~exp=1691128645~hmac=ef933785ff0ef28094f89fe7b7241b71256d5e86014f8c489b4809ff2dae36b6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+  }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <form action="" method="post">
+      {% csrf_token %}
+
+
+      <label for="name_user" class="input01"><b>USERNAME</b></label>
+      <input type="text" name="uname" id="name_user" placeholder="enter your name">
+
+      <label for="fname" class="input01"><b>FIRSTNAME</b></label>
+      <input type="text" name="f_name" id="fname" placeholder="enter your first name">
+
+      <label for="lname" class="input01"><b>LASTNAME</b></label>
+      <input type="text" name="l_name" id="l_name" placeholder="enter your first name">
+
+      <label for="" class="input01"><b>PASSWORD</b></label>
+      <input type="password" name="password" id="" placeholder="enter password">
+
+      
+
+
+      <button type="submit"  class="input01">SUMBIT</button>
+    
+
+  </div>
+  
+</body>
+</html>

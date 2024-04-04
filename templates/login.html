@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+  <style>
+   body{
+    margin:0px;
+    padding: 0px;
+    letter-spacing: 1px;
+  }
+  form{
+    height: 100vh;
+    
+    font-family: 'Inter', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px;
+    width: 40rem;
+    
+    
+  }
+  input{
+    width: 100%;
+    height: 50px;
+  }
+  
+  .title{
+    background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9naW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+  }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <h3>HAVE AN ACCOUNT ?</h3>
+
+      <label for="name_user" class="input01"><b>USERNAME</b></label>
+      <input type="text" name="uname" id="name_user" placeholder="enter your name">
+
+      <label for="" class="input01"><b>PASSWORD</b></label>
+      <input type="password" name="password" id="" placeholder="enter password">
+
+      
+
+
+      <button type="submit">LOGIN</button>
+    
+
+  </div>
+  
+</body>
+</html>
